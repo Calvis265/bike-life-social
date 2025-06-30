@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 interface User {
@@ -8,6 +7,7 @@ interface User {
   avatar_url?: string;
   location?: string;
   bio?: string;
+  role?: 'admin' | 'user';
 }
 
 interface AuthContextType {
@@ -17,6 +17,7 @@ interface AuthContextType {
   register: (username: string, email: string, password: string) => Promise<void>;
   logout: () => void;
   isLoading: boolean;
+  isAdmin: boolean;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -51,11 +52,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       // Mock login for frontend demo - replace with actual API call
       const mockUser = {
         id: '1',
-        username: 'rider123',
+        username: 'admin',
         email: email,
         avatar_url: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
         location: 'Los Angeles, CA',
-        bio: 'Passionate motorcycle enthusiast'
+        bio: 'Admin user with full access',
+        role: 'admin' as const
       };
       
       const mockToken = 'mock_jwt_token_' + Date.now();
@@ -97,8 +99,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     localStorage.removeItem('motoconnect_user');
   };
 
+  const isAdmin = user?.role === 'admin';
+
   return (
-    <AuthContext.Provider value={{ user, token, login, register, logout, isLoading }}>
+    <AuthContext.Provider value={{ user, token, login, register, logout, isLoading, isAdmin }}>
       {children}
     </AuthContext.Provider>
   );

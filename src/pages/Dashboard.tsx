@@ -1,10 +1,10 @@
-
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import Navbar from '../components/Navbar';
+import AdminPanel from '../components/admin/AdminPanel';
 import { useAuth } from '../contexts/AuthContext';
 import { 
   Bike, 
@@ -16,11 +16,12 @@ import {
   TrendingUp,
   Calendar,
   DollarSign,
-  Eye
+  Eye,
+  Shield
 } from 'lucide-react';
 
 const Dashboard = () => {
-  const { user } = useAuth();
+  const { user, isAdmin } = useAuth();
 
   // Mock data - replace with actual API calls
   const stats = {
@@ -73,7 +74,15 @@ const Dashboard = () => {
               </AvatarFallback>
             </Avatar>
             <div>
-              <h1 className="text-3xl font-bold">Welcome back, {user?.username}!</h1>
+              <div className="flex items-center gap-2">
+                <h1 className="text-3xl font-bold">Welcome back, {user?.username}!</h1>
+                {isAdmin && (
+                  <Badge variant="destructive" className="flex items-center gap-1">
+                    <Shield className="h-3 w-3" />
+                    Admin
+                  </Badge>
+                )}
+              </div>
               <p className="text-muted-foreground">Manage your listings and track your activity</p>
             </div>
           </div>
@@ -84,6 +93,13 @@ const Dashboard = () => {
             </Link>
           </Button>
         </div>
+
+        {/* Admin Panel - Only show for admin users */}
+        {isAdmin && (
+          <div className="mb-8">
+            <AdminPanel />
+          </div>
+        )}
 
         {/* Stats Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
