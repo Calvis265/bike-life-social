@@ -23,7 +23,7 @@ import {
 const Dashboard = () => {
   const { user, isAdmin } = useAuth();
 
-  // Mock data - replace with actual API calls
+
   const stats = {
     totalListings: 3,
     totalViews: 1247,
