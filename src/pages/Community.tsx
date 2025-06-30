@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -27,7 +26,7 @@ import {
   Users,
   Plus,
   Pin,
-  Fire
+  Flame
 } from 'lucide-react';
 
 const Community = () => {
@@ -241,7 +240,7 @@ const Community = () => {
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2 mb-2">
                           {post.isPinned && <Pin className="h-4 w-4 text-primary" />}
-                          {post.isHot && <Fire className="h-4 w-4 text-orange-500" />}
+                          {post.isHot && <Flame className="h-4 w-4 text-orange-500" />}
                           <Badge variant="outline" className="text-xs">
                             {post.category}
                           </Badge>
