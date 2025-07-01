@@ -166,7 +166,7 @@ const Index = () => {
                 price: 18500,
                 image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop",
                 mileage: 1200,
-                location: "Los Angeles, CA"
+                location: "Nairobi, Kenya"
               },
               {
                 id: 2,
@@ -176,7 +176,7 @@ const Index = () => {
                 price: 16800,
                 image: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=400&h=300&fit=crop",
                 mileage: 2500,
-                location: "Miami, FL"
+                location: "Nairobi, Kenya"
               },
               {
                 id: 3,
@@ -186,7 +186,7 @@ const Index = () => {
                 price: 17200,
                 image: "https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?w=400&h=300&fit=crop",
                 mileage: 800,
-                location: "New York, NY"
+                location: "Nairobi, Kenya"
               }
             ].map((bike) => (
               <Card key={bike.id} className="group hover:shadow-lg transition-all duration-300 overflow-hidden">
@@ -202,9 +202,9 @@ const Index = () => {
                     <h3 className="font-bold text-lg">{bike.brand} {bike.model}</h3>
                     <Badge variant="secondary">{bike.year}</Badge>
                   </div>
-                  <p className="text-2xl font-bold text-primary mb-3">${bike.price.toLocaleString()}</p>
+                  <p className="text-2xl font-bold text-primary mb-3">Ksh{bike.price.toLocaleString()}</p>
                   <div className="space-y-1 text-sm text-muted-foreground">
-                    <p>{bike.mileage.toLocaleString()} miles</p>
+                    <p>{bike.mileage.toLocaleString()} Km</p>
                     <p>{bike.location}</p>
                   </div>
                   <Button className="w-full mt-4" asChild>
@@ -284,7 +284,7 @@ const Index = () => {
           </div>
           
           <div className="border-t mt-8 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2024 MotoConnect. All rights reserved.</p>
+            <p>&copy; 2025 MotoConnect. All rights reserved.</p>
           </div>
         </div>
       </footer>

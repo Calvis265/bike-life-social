@@ -19,8 +19,8 @@ const Profile = () => {
     name: 'John Doe',
     email: 'john.doe@example.com',
     bio: 'Motorcycle enthusiast and rider passionate about connecting with fellow riders.',
-    location: 'San Francisco, CA',
-    phone: '+1 (555) 123-4567'
+    location: 'Nairobi, Kenya',
+    phone: '+254 110-123-4567'
   });
 
   const handleImageUpload = (event: React.ChangeEvent<HTMLInputElement>) => {

@@ -31,7 +31,7 @@ const Bikes = () => {
       price: 18500,
       image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop",
       mileage: 1200,
-      location: "Los Angeles, CA",
+      location: "Nairobi, Kenya",
       condition: "Like New",
       seller: "SpeedDemon"
     },
@@ -43,7 +43,7 @@ const Bikes = () => {
       price: 16800,
       image: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=400&h=300&fit=crop",
       mileage: 2500,
-      location: "Miami, FL",
+      location: "Mombasa, Kenya",
       condition: "Excellent",
       seller: "RideLife"
     },
@@ -55,7 +55,7 @@ const Bikes = () => {
       price: 17200,
       image: "https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?w=400&h=300&fit=crop",
       mileage: 800,
-      location: "New York, NY",
+      location: "nairobi, Kenya",
       condition: "Like New",
       seller: "GreenMachine"
     },
@@ -67,7 +67,7 @@ const Bikes = () => {
       price: 22500,
       image: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=400&h=300&fit=crop&sat=150",
       mileage: 3200,
-      location: "Austin, TX",
+      location: "Kisumu, Kenya",
       condition: "Very Good",
       seller: "RedBeast"
     },
@@ -79,7 +79,7 @@ const Bikes = () => {
       price: 19800,
       image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop&hue=200",
       mileage: 1800,
-      location: "Seattle, WA",
+      location: "Nakuru, Kenya",
       condition: "Excellent",
       seller: "BavarianRider"
     },
@@ -91,7 +91,7 @@ const Bikes = () => {
       price: 14200,
       image: "https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?w=400&h=300&fit=crop&hue=260",
       mileage: 4500,
-      location: "Phoenix, AZ",
+      location: "Nairobi, Kenya",
       condition: "Good",
       seller: "DesertRider"
     }
@@ -146,10 +146,10 @@ const Bikes = () => {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="all">All Prices</SelectItem>
-                <SelectItem value="under-10k">Under $10,000</SelectItem>
-                <SelectItem value="10k-20k">$10,000 - $20,000</SelectItem>
-                <SelectItem value="20k-30k">$20,000 - $30,000</SelectItem>
-                <SelectItem value="over-30k">Over $30,000</SelectItem>
+                <SelectItem value="under-100k">Under Ksh100,000</SelectItem>
+                <SelectItem value="100k-500k">Ksh100,000 - Ksh500,000</SelectItem>
+                <SelectItem value="500k-900k">Ksh500,000 - Ksh900,000</SelectItem>
+                <SelectItem value="over-999k">Over Ksh900k</SelectItem>
               </SelectContent>
             </Select>
 
@@ -198,13 +198,13 @@ const Bikes = () => {
                     <h3 className="font-bold text-lg">{bike.brand} {bike.model}</h3>
                     <p className="text-muted-foreground">{bike.year}</p>
                   </div>
-                  <p className="text-2xl font-bold text-primary">${bike.price.toLocaleString()}</p>
+                  <p className="text-2xl font-bold text-primary">Ksh{bike.price.toLocaleString()}</p>
                 </div>
                 
                 <div className="space-y-2 mb-4">
                   <div className="flex justify-between text-sm">
                     <span className="text-muted-foreground">Mileage:</span>
-                    <span>{bike.mileage.toLocaleString()} miles</span>
+                    <span>{bike.mileage.toLocaleString()} Km</span>
                   </div>
                   <div className="flex items-center text-sm text-muted-foreground">
                     <MapPin className="h-4 w-4 mr-1" />

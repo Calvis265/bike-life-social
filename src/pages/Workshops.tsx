@@ -25,7 +25,7 @@ const Workshops = () => {
     {
       id: 1,
       title: 'Basic Motorcycle Maintenance',
-      instructor: 'Mike Rodriguez',
+      instructor: 'Mike Mondo',
       date: '2024-07-15',
       time: '10:00 AM - 4:00 PM',
       location: 'Downtown Workshop Center',
@@ -42,7 +42,7 @@ const Workshops = () => {
     {
       id: 2,
       title: 'Advanced Engine Tuning',
-      instructor: 'Sarah Chen',
+      instructor: 'Sarah Njuguna',
       date: '2024-07-20',
       time: '9:00 AM - 5:00 PM',
       location: 'Performance Shop East',
@@ -59,7 +59,7 @@ const Workshops = () => {
     {
       id: 3,
       title: 'Motorcycle Safety & Inspection',
-      instructor: 'David Thompson',
+      instructor: 'David Karanja',
       date: '2024-07-18',
       time: '2:00 PM - 6:00 PM',
       location: 'Safety Training Center',
@@ -93,7 +93,7 @@ const Workshops = () => {
     {
       id: 5,
       title: 'Electrical Systems Troubleshooting',
-      instructor: 'Tom Johnson',
+      instructor: 'Tom Ochieng',
       date: '2024-07-22',
       time: '1:00 PM - 5:00 PM',
       location: 'Tech Workshop Lab',
@@ -232,7 +232,7 @@ const Workshops = () => {
                 </div>
 
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-2xl font-bold">${workshop.price}</span>
+                  <span className="text-2xl font-bold">Ksh{workshop.price}</span>
                   {workshop.spots <= 3 && (
                     <Badge variant="destructive">Almost Full</Badge>
                   )}

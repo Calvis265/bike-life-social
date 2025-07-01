@@ -37,7 +37,7 @@ const AdminPanel = () => {
               <Package className="h-4 w-4" />
               Products
             </TabsTrigger>
-            <TabsTrigger value="workshops" className="flex items-center gap-2">
+ z           <TabsTrigger value="workshops" className="flex items-center gap-2">
               <Calendar className="h-4 w-4" />
               Workshops
             </TabsTrigger>

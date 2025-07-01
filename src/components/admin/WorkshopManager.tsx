@@ -20,7 +20,7 @@ export const WorkshopManager = () => {
     {
       id: 1,
       title: 'Basic Motorcycle Maintenance',
-      instructor: 'Mike Rodriguez',
+      instructor: 'Mike Mondo',
       date: '2024-07-15',
       price: 149,
       spots: 8,
@@ -30,7 +30,7 @@ export const WorkshopManager = () => {
     {
       id: 2,
       title: 'Advanced Engine Tuning',
-      instructor: 'Sarah Chen',
+      instructor: 'Sarah Karanja',
       date: '2024-07-20',
       price: 299,
       spots: 3,

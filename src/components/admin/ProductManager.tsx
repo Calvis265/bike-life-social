@@ -134,7 +134,7 @@ export const ProductManager = () => {
                     </div>
                   </TableCell>
                   <TableCell>{product.category}</TableCell>
-                  <TableCell>${product.price}</TableCell>
+                  <TableCell>Ksh{product.price}</TableCell>
                   <TableCell>{product.stock}</TableCell>
                   <TableCell>
                     <Badge variant={product.status === 'active' ? 'default' : 'secondary'}>

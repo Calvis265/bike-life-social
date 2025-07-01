@@ -56,7 +56,7 @@ const Parts = () => {
       description: "High-performance exhaust system for Yamaha R1. Titanium construction with carbon fiber tip.",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=300&fit=crop",
       seller: "BikeGuru",
-      location: "California",
+      location: "Nairobi",
       inStock: true
     },
     {
@@ -68,7 +68,7 @@ const Parts = () => {
       description: "Premium brake pads compatible with Honda CBR series. Enhanced stopping power.",
       image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop",
       seller: "PartsPro",
-      location: "Texas",
+      location: "Nairobi",
       inStock: true
     },
     {
@@ -80,7 +80,7 @@ const Parts = () => {
       description: "High-intensity LED headlight assembly for Kawasaki Ninja series.",
       image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&h=300&fit=crop",
       seller: "LightTech",
-      location: "Florida",
+      location: "Nairobi",
       inStock: false
     },
     {
@@ -92,7 +92,7 @@ const Parts = () => {
       description: "Adjustable motorcycle mirrors with anti-glare coating.",
       image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=300&fit=crop",
       seller: "RiderGear",
-      location: "New York",
+      location: "Nairobi",
       inStock: true
     },
     {
@@ -104,7 +104,7 @@ const Parts = () => {
       description: "Complete chain and sprocket kit for Suzuki GSXR models.",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=300&fit=crop",
       seller: "ChainMaster",
-      location: "Nevada",
+      location: "Nairobi",
       inStock: true
     },
     {
@@ -116,7 +116,7 @@ const Parts = () => {
       description: "Waterproof custom seat cover with gel padding for extra comfort.",
       image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop",
       seller: "ComfortRide",
-      location: "Oregon",
+      location: "Nairobi",
       inStock: true
     }
   ];
@@ -208,7 +208,7 @@ const Parts = () => {
               <CardContent className="pt-0">
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-2xl font-bold text-primary">${part.price}</span>
+                    <span className="text-2xl font-bold text-primary">Ksh{part.price}</span>
                     <span className={`px-2 py-1 rounded text-xs ${
                       part.inStock ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
                     }`}>

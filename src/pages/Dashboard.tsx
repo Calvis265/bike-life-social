@@ -121,7 +121,7 @@ const Dashboard = () => {
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">{stats.totalViews.toLocaleString()}</div>
-              <p className="text-xs text-muted-foreground">+180 from last week</p>
+              <p className="text-xs text-muted-foreground">+5 from last week</p>
             </CardContent>
           </Card>
 
@@ -132,8 +132,8 @@ const Dashboard = () => {
               <DollarSign className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">${stats.totalEarnings.toLocaleString()}</div>
-              <p className="text-xs text-muted-foreground">+12% from last month</p>
+              <div className="text-2xl font-bold">Ksh{stats.totalEarnings.toLocaleString()}</div>
+              <p className="text-xs text-muted-foreground">+5% from last month</p>
             </CardContent>
           </Card>
 
@@ -144,7 +144,7 @@ const Dashboard = () => {
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">{stats.messagesUnread}</div>
-              <p className="text-xs text-muted-foreground">3 new today</p>
+              <p className="text-xs text-muted-foreground">1 new today</p>
             </CardContent>
           </Card>
         </div>
@@ -181,7 +181,7 @@ const Dashboard = () => {
                           </Badge>
                         </div>
                         <div className="flex justify-between items-center text-sm text-muted-foreground">
-                          <span>${listing.price.toLocaleString()}</span>
+                          <span>Ksh{listing.price.toLocaleString()}</span>
                           <span>{listing.views} views</span>
                         </div>
                       </div>

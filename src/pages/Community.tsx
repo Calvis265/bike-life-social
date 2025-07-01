@@ -48,8 +48,8 @@ const Community = () => {
   const posts = [
     {
       id: 1,
-      title: "Best routes for weekend rides in California?",
-      content: "Looking for some scenic routes around LA and San Francisco. Any recommendations?",
+      title: "Best routes for weekend rides in Nairobi",
+      content: "Looking for some scenic routes around Riftvalley. Any recommendations?",
       author: {
         username: "RoadWarrior",
         avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face"
@@ -81,7 +81,7 @@ const Community = () => {
     {
       id: 3,
       title: "Maintenance Schedule for High Mileage Bikes",
-      content: "Comprehensive guide for maintaining bikes with over 50k miles...",
+      content: "Comprehensive guide for maintaining bikes with over 50k Km...",
       author: {
         username: "MechMaster",
         avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop&crop=face"

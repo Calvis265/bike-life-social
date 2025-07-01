@@ -39,7 +39,7 @@ const BikeDetails = () => {
       "https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?w=800&h=600&fit=crop"
     ],
     mileage: 1200,
-    location: "Los Angeles, CA",
+    location: "Nairobi, Kenya",
     condition: "Like New",
     description: `This pristine 2023 Yamaha YZF-R1 is a true masterpiece of engineering and design. With only 1,200 miles on the odometer, this bike has been meticulously maintained and garage-kept since day one.
 
@@ -71,7 +71,7 @@ const BikeDetails = () => {
       rating: 4.8,
       totalSales: 12,
       joinDate: "2022",
-      location: "Los Angeles, CA",
+      location: " Nairobi, Kenya",
       responseTime: "Within 2 hours"
     }
   };
@@ -174,7 +174,7 @@ const BikeDetails = () => {
                     <Badge>{bike.condition}</Badge>
                   </div>
                   <div className="text-3xl font-bold text-primary mb-4">
-                    ${bike.price.toLocaleString()}
+                    Ksh{bike.price.toLocaleString()}
                   </div>
                 </div>
 
@@ -184,7 +184,7 @@ const BikeDetails = () => {
                       <Gauge className="h-4 w-4" />
                       Mileage
                     </div>
-                    <span className="font-medium">{bike.mileage.toLocaleString()} miles</span>
+                    <span className="font-medium">{bike.mileage.toLocaleString()} Km</span>
                   </div>
                   
                   <div className="flex items-center justify-between text-sm">
