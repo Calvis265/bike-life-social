@@ -13,6 +13,7 @@ interface ProductFormProps {
   onCancel: () => void;
 }
 
+
 export const ProductForm = ({ product, onSave, onCancel }: ProductFormProps) => {
   const [formData, setFormData] = useState({
     name: product?.name || '',

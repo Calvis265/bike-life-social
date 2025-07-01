@@ -14,6 +14,7 @@ import {
   Eye
 } from 'lucide-react';
 
+
 export const ProductManager = () => {
   const [products, setProducts] = useState([
     {

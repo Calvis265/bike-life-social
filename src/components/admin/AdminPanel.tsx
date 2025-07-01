@@ -51,6 +51,7 @@ const AdminPanel = () => {
             </TabsTrigger>
           </TabsList>
           
+          
           <TabsContent value="products" className="mt-6">
             <ProductManager />
           </TabsContent>

@@ -14,6 +14,7 @@ import {
   Users
 } from 'lucide-react';
 
+
 export const WorkshopManager = () => {
   const [workshops, setWorkshops] = useState([
     {

@@ -100,3 +100,4 @@ export const ImageUpload = ({ currentImage, onImageUpload }: ImageUploadProps) =
     </div>
   );
 };
+
