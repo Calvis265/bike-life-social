@@ -247,7 +247,7 @@ const Parts = () => {
           ))}
         </div>
 
-        {/* Call to Action */}
+        {/* Call to Action  */}
         <div className="text-center bg-muted/50 rounded-lg p-8">
           <h3 className="text-2xl font-semibold mb-4">Have Parts to Sell?</h3>
           <p className="text-muted-foreground mb-6">

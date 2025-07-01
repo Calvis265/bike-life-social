@@ -167,7 +167,7 @@ const Bikes = () => {
           </div>
         </div>
 
-        {/* Results Count */}
+        {/* Results Count  */}
         <div className="flex items-center justify-between mb-6">
           <p className="text-muted-foreground">
             Showing {bikes.length} motorcycles

@@ -10,6 +10,7 @@ import { useAuth } from '../contexts/AuthContext';
 import { toast } from 'sonner';
 import { Bike, Eye, EyeOff } from 'lucide-react';
 
+
 const Register = () => {
   const [formData, setFormData] = useState({
     username: '',

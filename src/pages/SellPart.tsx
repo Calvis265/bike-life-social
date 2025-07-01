@@ -15,4 +15,5 @@ const SellPart = () => {
   );
 };
 
+
 export default SellPart;

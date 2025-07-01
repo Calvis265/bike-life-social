@@ -124,7 +124,7 @@ const BikeDetails = () => {
               </CardContent>
             </Card>
 
-            {/* Description */}
+            {/* Description  */}
             <Card>
               <CardHeader>
                 <CardTitle>Description</CardTitle>

@@ -11,6 +11,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       
+      
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary/5 via-background to-primary/10 py-20 overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>

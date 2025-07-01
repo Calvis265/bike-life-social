@@ -14,6 +14,7 @@ import {
   List
 } from 'lucide-react';
 
+
 const Store = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');

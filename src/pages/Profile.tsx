@@ -10,6 +10,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Camera, Trash2, Save, Edit, User, Mail, MapPin, Phone, AlertTriangle } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
+
 const Profile = () => {
   const { toast } = useToast();
   const [isEditing, setIsEditing] = useState(false);

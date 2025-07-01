@@ -15,4 +15,5 @@ const PartDetails = () => {
   );
 };
 
+
 export default PartDetails;
