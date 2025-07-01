@@ -2,7 +2,7 @@
 
 **MotoConnect** is a dynamic, interactive web application designed for motorcycle enthusiasts. It enables users to explore, buy, and sell motorcycles and parts, connect with a like-minded community, and access mechanic workshops and premium motorcycle gear — all in one place.
 
-[Live Demo](#) <!-- [Replace with your live URL](https://bike-life-social.vercel.app/) -->
+[Live Demo](https://bike-life-social.vercel.app/)
 
 ---
 
