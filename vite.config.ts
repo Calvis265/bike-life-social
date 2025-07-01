@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
-      allowedHosts: ["bike-life-social-1.onrender.com"],
+      allowedHosts: ["bike-life-social.onrender.com"],
   },
   plugins: [
     react(),
