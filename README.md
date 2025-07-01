@@ -3,44 +3,107 @@
 **MotoConnect** is a dynamic, interactive web application designed for motorcycle enthusiasts. It enables users to explore, buy, and sell motorcycles and parts, connect with a like-minded community, and access mechanic workshops and premium motorcycle gear — all in one place.
 
 [Live Demo](https://bike-life-social.vercel.app/)
+  
+🏍️ *The Ultimate Motorcycle Community*
 
 ---
 
-## Project Overview
+##  Features
 
-MotoConnect brings together a motorcycle-loving community in a seamless digital experience. With engaging UI, dynamic bike listings, community features, and an integrated store, MotoConnect is your one-stop hub for everything bikes.
+###  Home Page
+- Eye-catching landing page that introduces the MotoConnect community.
 
----
+### 🏍️ Bike Collection
+- View a wide selection of sports bikes.
+- Detailed bike specs:
+  - **Location**
+  - **Year of Manufacture (YOM)**
+  - **Engine**
+  - **Power**
+  - **Torque**
+  - **Transmission**
+  - **Fuel Capacity**
+  - **Weight**
+  - **Top Speed**
 
-## Features
+###  Motorcycle Part Marketplace
+- Browse and buy high-quality motorcycle parts.
 
-### Home Page
-- Engaging landing page introducing the MotoConnect community.
+### Workshops
+- Discover mechanics and service providers in your area.
 
-### Bike Collection
-- Dynamic listings of available sports bikes.
-- Each bike includes:
-  - Location
-  - Year of Manufacture (YOM)
-  - Engine Specs:
-    - Engine type
-    - Power
-    - Torque
-    - Transmission
-    - Fuel capacity
-    - Weight
-    - Top speed
+### Community Forum
+- Connect with other riders, ask questions, and share experiences.
 
-### Marketplace
+###  MotoConnect Store
+- Purchase premium gear and accessories.
+
+### Shopping Cart
+- Add motorcycles and parts to cart
+- Review selections
+- Proceed to checkout
+
+### User Tabs & Navigation
+
+#### **Account**
+- Login
+- Sign Up
+- Dashboard
+- Profile
+
+#### **Marketplace**
 - Buy Bikes
-- Buy Parts: Get high-quality motorcycle parts.
-- Sell Your Bike: List your bike for sale.
-- Find Workshops: Discover professional motorcycle workshops.
+- Buy Parts
+- Sell Your Bike
+- Find Workshops
 
-### Community
-- Forum: Connect with fellow riders.
+#### **Community**
+- Forum
 - Maintenance Tips
-- MotoConnect Gear Store: Shop premium motorcycle gear and accessories.
+- Gear Store
+
+---
+
+## 🛠️ Technologies Used
+
+- **Frontend**: JavaScript, TypeScript, React, Tailwind CSS, Bootstrap
+- **Backend**: Python (Flask)
+- **Additional Languages**: C, C++, Cython
+- **Libraries & Tools**:
+  - Font Awesome (icons)
+  - Google Fonts (typography)
+  - Vite (build tool)
+  - ESLint (linting)
+
+---
+
+##  Project Directory Structure
+
+```plaintext
+bike-life-social/
+  ├── .gitignore
+  ├── README.md
+  ├── bun.lockb
+  ├── components.json
+  ├── eslint.config.js
+  ├── index.html
+  ├── package-lock.json
+  ├── package.json
+  ├── postcss.config.js
+  ├── tailwind.config.ts
+  ├── tsconfig.app.json
+  ├── tsconfig.json
+  ├── tsconfig.node.json
+  ├── vite.config.ts
+  ├── flask-backend/
+  │   └── app.py
+  └── .git/
+      ├── branches/
+      ├── hooks/
+      ├── info/
+      ├── logs/
+      ├── objects/
+      └── refs/
 
 ### Shopping Cart
 - Add bikes or items to your cart.
