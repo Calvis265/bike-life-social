@@ -9,6 +9,7 @@ type ThemeProviderProps = {
   storageKey?: string
 }
 
+
 type ThemeProviderState = {
   theme: Theme
   setTheme: (theme: Theme) => void
